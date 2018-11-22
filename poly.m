@@ -1,4 +1,4 @@
-function[value] = poly(coeff, x)
+function[value] = pval(coeff, x) %polynomial value
 % Horner algorithm for polynomial function value at x
 % coef = a0, a1, a2, ... a(n-1) - coefficients
 n = length(coeff);

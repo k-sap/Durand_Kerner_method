@@ -10,7 +10,7 @@ roots = zeros(n_roots, max_iter + 1);
 roots(1:n_roots, 1) = coeff(2:n_poly)';
 while k <= max_iter
     for i = 1:n_roots
-        roots(i, k+1) = roots(i, k) - poly(coeff, roots(i, k))/denominator(roots(1:n_roots,k), i);
+        roots(i, k+1) = roots(i, k) - pval(coeff, roots(i, k))/denominator(roots(1:n_roots,k), i);
     end
 k = k + 1;
 end
