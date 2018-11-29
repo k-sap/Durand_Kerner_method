@@ -4,8 +4,8 @@ function[result] = weierstrass_roots(coeff)
 %output: result - roots found
 
 %parameters:
-%xs = nodes(coeff);
-xs = [-10, 0, 10];
+xs = nodes(coeff);
+%xs = [-10, 0, 10];
 max_iter = 25;
 keps = 100;
 
