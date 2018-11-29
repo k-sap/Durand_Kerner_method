@@ -1,5 +1,5 @@
 function[value] = denominator(vector, i)
-% ∏(x(k)i − x(k)j) - calculate a value necessary for weierstrass function
+% ∏(x(k)i − x(k)j) - calculate a value necessary (used) for weierstrass function
 n = length(vector);
 value = 1;
 for j = 1:n
