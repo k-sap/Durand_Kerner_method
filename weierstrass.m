@@ -1,4 +1,4 @@
-function[roots] = weierstrass(coeff, max_iter, xs)
+function[roots, if_roots] = weierstrass(coeff, max_iter, xs, keps)
 % coeff- coefficients of polynomial
 % max_iter - maximum number of iterations
 % xs - points to start length(xs) = length(coeff) - 1
@@ -14,4 +14,5 @@ while k <= max_iter
     end
 k = k + 1;
 end
+if_roots = convergence(roots, keps);
 end
