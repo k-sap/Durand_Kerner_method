@@ -1,5 +1,5 @@
-function [results] = check(mult, max_iter,keps)
-canon=mult_to_canon(mult);
+function [results] = check(mult, max_iter,keps,nodes)
+canon=mult_to_coeff(mult);
 results=zeros(size(mult));
 j=size(canon);
 xs=nodes(canon);
