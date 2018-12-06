@@ -1,4 +1,4 @@
-function[result] = weierstrass_roots(coeff, max_iter, keps, xs)
+function[result] = main(coeff, max_iter, keps, xs)
 %main function for user
 %input: coeff - coefficients of polynomial coeff = [an, a(n-1), ... a1, a0] 
 %output: result - roots found
