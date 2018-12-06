@@ -1,3 +1,5 @@
+%skrypt testowy tworzacy wykres sredniej liczby iteracji potrzebnej dla
+%wielomianu danego stopnia
 averages = zeros(1, 10);
 keps = 10;
 %stopien wielomianu

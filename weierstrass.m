@@ -2,7 +2,21 @@ function[roots, if_roots] = weierstrass(coeff, max_iter, xs, keps)
 % coeff- coefficients of polynomial
 % max_iter - maximum number of iterations
 % xs - points to start length(xs) = length(coeff) - 1
-% dodac sprawdzanie poprawnosci wymiarow
+%keps - accuracy of precision
+
+if length(coeff) ~= length(xs) + 1
+    disp('Input error')
+    return
+end
+if max_iter <=0
+    disp('Input error')
+    return
+end
+if keps < 0
+    disp('Input error')
+    return
+end
+
 k = 1;
 n_poly = length(coeff); % n + 1 (because of a0 element)
 n_roots = length(xs);   % n
